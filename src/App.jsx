@@ -8,8 +8,9 @@ function App() {
   return (
     <>
       <Header />
-      <List/>
-      <Footer />
+      <List title="Minhas listas" 
+      subtitulo2lista="AGUA"/>
+     <Footer />
     </>
   )
 }

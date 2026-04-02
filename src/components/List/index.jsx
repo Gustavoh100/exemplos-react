@@ -1,11 +1,14 @@
 import './style.css'
-function List() {
+function List({
+  title,
+  subtitulo2lista = "minha lista de compra "
+}) {
   return (
     <section>
-      <h2 id="exemplo-h2" >Seção de listas</h2>
+      <h2 id="exemplo-h2" >{title}</h2>
 
 
-      <h3 id="ul" >lista não ordenada</h3>
+      <h3 id="ul" >{subtitulo2lista}</h3>
       <ul>
         <li>Batata</li>
         <li>Pão</li>
@@ -17,7 +20,7 @@ function List() {
         <li>Barbye</li>
         <li>Poquemons</li>
       </ul>
-    </section>
+      </section>
   )
 }
 export default List
